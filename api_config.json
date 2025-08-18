@@ -1,0 +1,20 @@
+{
+    "banned_words_api": {
+        "enabled": true,
+        "url": "https://v2.xxapi.cn/api/detect",
+        "timeout": 5,
+        "confidence_threshold": 0.7,
+        "fallback_to_local": true,
+        "cache_results": true,
+        "cache_duration": 3600
+    },
+    "local_detection": {
+        "enabled": true,
+        "priority": "first"
+    },
+    "logging": {
+        "log_api_calls": true,
+        "log_detected_words": true,
+        "log_file": "banned_words.log"
+    }
+}
